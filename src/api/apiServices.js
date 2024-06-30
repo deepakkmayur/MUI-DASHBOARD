@@ -1,5 +1,5 @@
 import axios from "axios";
-import env from "../config";
+
 
 export const getData=async()=>{
    try {
