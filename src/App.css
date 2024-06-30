@@ -1,0 +1,22 @@
+
+*{
+  box-sizing: border-box;
+}
+
+.grid-container {
+  margin-top: 20px;
+}
+
+.paper {
+  padding: 16px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #1976d2;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .paper {
+    background-color: #ff5722;
+  }
+}
