@@ -13,6 +13,7 @@ const DashboardMap = () => {
         height: '35%', 
         width: '100%', 
         paddingLeft: 5,
+        paddingRight: 5,
    }}
    >
    <GoogleMap/>
