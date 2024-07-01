@@ -90,7 +90,6 @@
 // export default DashboardCard;
 
 
-
 import { Box, Typography } from '@mui/material';
 import React from 'react';
 
@@ -148,7 +147,25 @@ const DashboardCard = ({ cardDetails }) => {
               bottom: 2
             }}
           >
-            <img src={card.image} alt="Image" style={{ width: '80%', height: 'auto', borderRadius: '10px', marginTop: '-15px' }} />
+            {/* <img src={card.image} alt="Image" style={{ width:{sm:"30px",md:'50px',lg:"70px",xl:"50px"}, borderRadius: '10px', marginTop: '-15px' }} /> */}
+            <img
+        src={card.image}
+        alt="Image..."
+        style={{
+          width: '50px', 
+          borderRadius: '10px',
+          marginTop: '-15px',
+          '@media (min-width:600px)': {
+            width: '50px', 
+          },
+          '@media (min-width:960px)': {
+            width: '70px', 
+          },
+          '@media (min-width:1280px)': {
+            width: '50px', 
+          },
+        }}
+      />
             <Typography sx={{ fontSize: "17px", color: `${card.color}`, fontWeight: "bold" }}>{card.percentage}%</Typography>
             <Typography sx={{ fontSize: "60%", fontWeight: "bold" }}>{card.view}</Typography>
           </Box>
